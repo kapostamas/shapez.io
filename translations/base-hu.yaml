@@ -47,13 +47,13 @@ steamPage:
 global:
     loading: Betöltés
     error: Hiba
-    thousandsDivider: "."
+    thousandsDivider: " "
     decimalSeparator: ","
     suffix:
-        thousands: e
+        thousands: E
         millions: M
         billions: Mrd
-        trillions: Tr
+        trillions: B
     infinite: végtelen
     time:
         oneSecondAgo: egy másodperce
@@ -81,7 +81,7 @@ demoBanners:
 mainMenu:
     play: Játék
     continue: Folytatás
-    newGame: Új Játék
+    newGame: Új játék
     changelog: Változások
     subreddit: Reddit
     importSavegame: Importálás
@@ -102,16 +102,16 @@ dialogs:
         later: Később
         restart: Újrakezdés
         reset: Visszaállítás
-        getStandalone: Teljes Verzió
-        deleteGame: Játék Törlése
-        viewUpdate: Frissítés Megtekintése
+        getStandalone: Teljes verzió
+        deleteGame: Játék törlése
+        viewUpdate: Frissítés megtekintése
         showUpgrades: Fejlesztések
         showKeybindings: Irányítás
     importSavegameError:
-        title: Importálás Hiba
+        title: Hiba importáláskor
         text: "Nem sikerült importálni a mentésedet:"
     importSavegameSuccess:
-        title: Mentés Importálva
+        title: Mentés importálva
         text: A mentésed sikeresen importálva lett.
     gameLoadFailure:
         title: A játék elromlott
@@ -119,8 +119,8 @@ dialogs:
     confirmSavegameDelete:
         title: Törlés megerősítése
         text: Biztos hogy törölni akarod a következő mentésedet?<br><br>
-            '<savegameName>' <savegameLevel>. szinten<br><br> Ezt nem lehet
-            visszacsinálni!
+            '<savegameName>' <savegameLevel>. szinten<br><br> Ez a művelet nem
+            visszavonható!
     savegameDeletionError:
         title: Sikertelen törlés
         text: "Nem sikerült törölni a mentésed:"
@@ -130,7 +130,7 @@ dialogs:
     editKeybinding:
         title: Gyorsbillentyű módosítása
         desc: Nyomd meg a billentyűt vagy egérgombot, amit használni szeretnél, vagy
-            nyomj ESC-et, ha mégse.
+            nyomj ESC-et a visszalépéshez.
     resetKeybindingsConfirmation:
         title: Gyorsbillentyűk visszaállítása
         desc: Ez minden gyorsbillentyűt visszaállít az eredeti állapotára. Biztos vagy
@@ -234,7 +234,7 @@ ingame:
         blue: Kék
         yellow: Sárga
         purple: Lila
-        cyan: Világoskék
+        cyan: Cián
         white: Fehér
         black: Fekete
         uncolored: Szürke
@@ -250,19 +250,19 @@ ingame:
             itemsPerSecondDouble: (x2)
             tiles: <x> csempe
     levelCompleteNotification:
-        levelTitle: <level>. Szint
+        levelTitle: <level>. szint
         completed: Teljesítve
         unlockText: <reward> Feloldva!
-        buttonNextLevel: Következő Szint
+        buttonNextLevel: Következő szint
     notifications:
         newUpgrade: Egy új fejlesztés elérhető!
         gameSaved: Játékállás mentve.
-        freeplayLevelComplete: <level>. Szint teljesítve!
+        freeplayLevelComplete: <level>. szint teljesítve!
     shop:
         title: Fejlesztések
         buttonUnlock: Fejlesztés
-        tier: <x>. Szint
-        maximumLevel: LEGMAGASABB SZINT (<currentMult>x Sebesség)
+        tier: <x>. szint
+        maximumLevel: LEGMAGASABB SZINT (<currentMult>x sebesség)
     statistics:
         title: Statisztika
         dataSources:
@@ -354,7 +354,7 @@ ingame:
         no_thanks: Nem, köszönöm!
         points:
             levels:
-                title: 12 Új Szint
+                title: 12 új szint
                 desc: Összesen 26
             buildings:
                 title: 18 Új Épület
@@ -504,7 +504,7 @@ buildings:
                 0). Különböző színű vezetékek nem kapcsolódnak egymáshoz.
     wire_tunnel:
         default:
-            name: Vezeték Kereszteződés
+            name: Vezeték-kereszteződés
             description: Áthidal két vezetéket anélkül, hogy kapcsolódnának egymáshoz.
     constant_signal:
         default:
@@ -588,12 +588,12 @@ buildings:
                 beállított jelet a normál rétegen.
 storyRewards:
     reward_cutter_and_trash:
-        title: Alakzatok Vágása
+        title: Alakzatok vágása
         desc: Feloldottad a <strong>Vágót</strong>, amely függőlegesen félbevág
             alakzatokat, <strong>függetlenül a Vágó
             irányától</strong>!<br><br>Szabadulj meg a feleslegtől, ellenkező
-            esetben <strong>eldugulhat a rendszer</strong> - Ezért kaptál egy
-            <strong>Kukát</strong>, amely elpusztít mindent, amit belevezetsz!
+            esetben <strong>el fog dugulni a rendszer</strong> - Ezért kaptál egy
+            <strong>Kukát</strong> is, amely elpusztít mindent, amit belevezetsz!
     reward_rotater:
         title: Forgatás
         desc: Feloldottad a <strong>Forgatót</strong>, amely az óramutató járásával 90
@@ -603,7 +603,7 @@ storyRewards:
         desc: "Feloldottad a <strong>Festőt</strong> - Bányássz ki színeket (úgy, ahogy
             az alakzatokat eddig) és fesd le az alakzatokat a
             Festőben!<br><br>Tipp: Ha színtévesztő vagy, a Beállításokban
-            bekapcsolhatod a <strong>Színtévesztő Módot</strong>!"
+            bekapcsolhatod a <strong>Színtévesztő módot</strong>!"
     reward_mixer:
         title: Színkeverés
         desc: Feloldottad a <strong>Színkeverőt</strong>, amely két színt kever össze
@@ -617,7 +617,7 @@ storyRewards:
     reward_tunnel:
         title: Alagút
         desc: Feloldottad az <strong>Alagutat</strong> - Átvihetsz egy futószalagot
-            másik futószalag, vagy akár épület alatt!
+            másik futószalag vagy akár épület alatt!
     reward_rotater_ccw:
         title: Ellentétes Forgatás
         desc: Feloldottad a <strong>Forgató</strong> ellentétes irányú variánsát,
@@ -633,13 +633,13 @@ storyRewards:
     reward_underground_belt_tier_2:
         title: Alagút, II. Szint
         desc: Feoldottad az <strong>Alagút</strong> fejlesztett változatát -
-            <strong>Nagyobb távolságot</strong> képes lefedni, és mostmár
+            <strong>Nagyobb távolságot</strong> képes lefedni, és most már
             variálhatod az Alagutak típusait!
     reward_splitter:
         title: Kompakt Elosztó
         desc: Feloldottad a <strong>Kiegyenlítő</strong> egy új variánsát, az
-            <strong>Elosztót</strong>, amely egy bemenetből csinál két
-            Futószalagot!
+            <strong>Elosztót</strong>, amely egy bemenetet oszt el két
+            Futószalagra!
     reward_cutter_quad:
         title: Négybevágó
         desc: Feloldottad a <strong>Vágó</strong> egy új variánsát, a Negyedelőt, amely
@@ -669,21 +669,21 @@ storyRewards:
             eddigi alakzatra szükséged lesz majd a <strong>fejlesztések
             feloldásához</strong>!"
     no_reward_freeplay:
-        title: Következő Szint
+        title: Következő szint
         desc: Gratulálok! Hamarosan további funkciókkal bővül a Teljes Verzió!
     reward_balancer:
         title: Kiegyenlítő
         desc: Feloldottad a többfunkciós <strong>Kiegyenlítőt</strong> - Nagyobb,
-            hatékonyabb gyárat építhetsz bele oly módon, hogy <strong>elosztasz
+            hatékonyabb gyárat építhetsz vele azáltal, hogy <strong>elosztasz
             vagy összevonsz elemeket</strong> több futószalagra!
     reward_merger:
         title: Kompakt Összevonó
         desc: Feloldottad a <strong>Kiegyenlítő</strong> egy új variánsát, az
-            <strong>Összevonót</strong>, amely két bemenetből csinál egy
-            Futószalagot!
+            <strong>Összevonót</strong>, amely két bemenetet egyesít egy
+            Futószalagon!
     reward_belt_reader:
-        title: Futószalag-mérő
-        desc: Feloldottad a <strong>Futószalag-mérőt</strong>! Segítségével megmérheted
+        title: Futószalag-leolvasó
+        desc: Feloldottad a <strong>Futószalag-leolvasót</strong>! Segítségével megmérheted
             a Futószalag átmenő teljesítményét.<br><br>Várj csak, amíg feloldod
             a Vezetékeket - utána lesz csak igazán hasznos!
     reward_rotater_180:
@@ -706,8 +706,8 @@ storyRewards:
             <strong>logikai 1 vagy 0</strong>.
     reward_logic_gates:
         title: Logikai Kapuk
-        desc: Feloldottad a <strong>logikai kapukat</strong>! Nem baj, ha nem tudod, mik
-            ezek, de amúgy nagyon hasznosak!<br><br> Logikai kapuk segítségével
+        desc: Feloldottad a <strong>logikai kapukat</strong>! Nem baj, ha nem jöttél lázba tőlük,
+            de amúgy nagyon hasznosak!<br><br> Logikai kapuk segítségével
             tudsz ÉS, VAGY, Kizáró VAGY és TAGADÁS műveleteket számolni.<br><br>
             Ráadásként kaptál egy <strong>Tranzisztort</strong> is!
     reward_virtual_processing:
@@ -720,7 +720,7 @@ storyRewards:
             kért alakzatot el tud készíteni (Javaslom, hogy próbáld ki!).
             <br><br> - Építs valami nagyszerűt a Vezetékek segítségével.<br><br>
             - Folytasd a játékot, ahogy eddig.<br><br> Bárhogy is választasz,
-            érezd jól Magad!
+            érezd jól magad!
     reward_wires_painter_and_levers:
         title: Vezetékek & Négyszeres Festő
         desc: "Feloldottad a <strong>Vezeték Réteget</strong>: Ez egy új réteg a normál
@@ -743,7 +743,7 @@ storyRewards:
         desc: Elérted a Demó verzió végét!
     reward_freeplay:
         title: Végtelen Játékmód
-        desc: Megcsináltad! Feloldottad a <strong>Végtelen Játékmódot</strong>! Innentől kezdve az alakzatok <strong>véleetlenszerűen</strong> generálódnak!<br><br> A Központ innentől nem darabszámot kér, hanem <strong>átmenő teljesítményt</strong>, így ajánlom, hogy építs egy olyan gépezetet, amely automatikusan eljuttatja a Központnak a kívánt alakzatot!<br><br> A Központ kiküldi a kívánt alakzatot a Vezeték rétegre, szóval annyi a dolgot, hogy megvizsgáld az Alakzatvizsgálóval és ez alapján beállítsd a gyáradat.
+        desc: Megcsináltad! Feloldottad a <strong>Végtelen Játékmódot</strong>! Innentől kezdve az alakzatok <strong>véletlenszerűen</strong> generálódnak!<br><br> A Központ innentől nem darabszámot kér, hanem <strong>átmenő teljesítményt</strong>, így ajánlom, hogy építs egy olyan gépezetet, amely automatikusan eljuttatja a Központnak a kívánt alakzatot!<br><br> A Központ kiküldi a kívánt alakzatot a Vezeték rétegre, szóval annyi a dolgot, hogy megvizsgáld az Alakzatvizsgálóval és ez alapján beállítsd a gyáradat.
 settings:
     title: Beállítások
     categories:
@@ -772,11 +772,11 @@ settings:
             title: Automatikus mentés gyakorisága
             description: Az automatikus játékmentés gyakorisága, vagy annak kikapcsolása
             intervals:
-                one_minute: 1 Perc
-                two_minutes: 2 Perc
-                five_minutes: 5 Perc
-                ten_minutes: 10 Perc
-                twenty_minutes: 20 Perc
+                one_minute: 1 perc
+                two_minutes: 2 perc
+                five_minutes: 5 perc
+                ten_minutes: 10 perc
+                twenty_minutes: 20 perc
                 disabled: Kikapcsolva
         scrollWheelSensitivity:
             title: Nagyítás érzékenysége
@@ -797,13 +797,13 @@ settings:
                 regular: Normál
                 fast: Gyors
                 super_fast: Szupergyors
-                extremely_fast: Extrém Gyors
+                extremely_fast: Extrém gyors
         language:
             title: Nyelv
             description: A játék megjelenítési nyelve. A fordításokat a rajongók végzik,
                 ezért lehet, hogy nem teljesek.
         enableColorBlindHelper:
-            title: Színtévesztő Mód
+            title: Színtévesztő mód
             description: Színtévesztő vagy színvak felhasználók számára is játszhatóvá teszi
                 a játékot.
         fullscreen:
@@ -811,16 +811,16 @@ settings:
             description: A legjobb élmény érdekében ajánlott a teljes képernyős módot
                 bekapcsolni. Csak az Önálló Verzióban elérhető.
         soundsMuted:
-            title: Hangok Némítása
-            description: Kkapcsol minden hangeffektet a játékban.
+            title: Hangok némítása
+            description: Kikapcsol minden hangeffektet a játékban.
         musicMuted:
-            title: Zene Némítása
+            title: Zene némítása
             description: Kikapcsolja a játék alatt futó zenét.
         soundVolume:
-            title: Hangok Hangereje
+            title: Hangok hangereje
             description: A játék hangeffektjeinek az erősségét állítja.
         musicVolume:
-            title: Zene Hangereje
+            title: Zene hangereje
             description: A játék zenéjének a hangerejét állítja.
         theme:
             title: Téma
@@ -836,7 +836,7 @@ settings:
                 teljesítmény. Alacsonyabb Tick érték esetén a Futószalagok
                 áteresztőképessége nem mindig számolódik pontosan.
         alwaysMultiplace:
-            title: Folyamatos Lehelyezés
+            title: Folyamatos lehelyezés
             description: Ha be van kapcsolva, akkor az épület lehelyezés után kiválasztva
                 marad, megszakításig. Ez egyenlő azzal, mintha nyomnád a
                 SHIFT-et lehelyezéskor.
@@ -851,25 +851,25 @@ settings:
                 Futószalagok automatikusan törlődnek. Továbbá lehetővé teszi,
                 hogy az Alagutakat folyamatos húzással helyezd le.
         vignette:
-            title: Sarkok Elsötétítése
+            title: Sarkok elsötétítése
             description: Elsötétíti a képernyő sarkait, így könnyebben olvashatók az ott
                 megjelenő szövegek.
         rotationByBuilding:
-            title: Épületek Irányának Megjegyzése
+            title: Épületek irányának megjegyzése
             description: Minden épület megjegyzi a legutóbbi forgásirányát, amire
                 beállítottad. Ez nagyon hasznos lehet, ha gyakran váltogatsz
                 épülettípusokat, amiknek a legutóbb használt irányba kell
                 állniuk.
         compactBuildingInfo:
-            title: Rövidített Épület Infók
+            title: Rövidített épületinfók
             description: A kiválasztott épületnek csak a termelési arányát mutatja, szöveges
                 leírást és képet nem.
         disableCutDeleteWarnings:
-            title: Törlés/Kivágás Figyelmeztetések Kikapcsolása
+            title: Törlés/Kivágás figyelmeztetések kikapcsolása
             description: Kikapcsolja a megerősítő ablakokat, ha 100-nál több épületet
                 szeretnél egyszerre törölni vagy kivágni.
         lowQualityMapResources:
-            title: Alacsony Minőségű Erőforrás Ikonok
+            title: Alacsony minőségű erőforrás-ikonok
             description: Leegyszerűsíti az erőforrások kirajzolását a térképen bezoomolt
                 állapotban a teljesítmény javítása érdekében. Érdemes
                 kipróbálni!
@@ -880,36 +880,36 @@ settings:
         clearCursorOnDeleteWhilePlacing:
             title: Kijelölés Megszüntetése Jobbklikkre
             description: Megszünteti a kijelölést az egér jobb gombra kattintva. Ha ki van
-                kapcsolva, akkor úgy tudsz épületeket törölni, ha építési módban
+                kapcsolva, akkor tudsz épületeket törölni, ha építési módban
                 jobbklikkelsz.
         lowQualityTextures:
             title: Alacsony Minőségű Textúrák (Ronda)
             description: Alacsony minőségű textúrák használata a teljesítmény javítása
                 érdekében. Vigyázat, a játék elég ronda lesz tőle!
         displayChunkBorders:
-            title: Térképdarabok Határainak Mutatása
+            title: Térképdarabok határainak mutatása
             description: A játék 16×16-os térképdarabokra van osztva. Ennek a funkciónak a
                 bekapcsolásával láthatóvá válnak ezek a határok.
         pickMinerOnPatch:
-            title: Bánya Automatikus Kiválasztása
+            title: Bánya automatikus kiválasztása
             description: Ha egy erőforráson használod a Pipettát, akkor automatikusan a
                 kiválasztja a Bányát leépítéshez.
         simplifiedBelts:
-            title: Egyszerűsített Futószalagok (Ronda)
+            title: Egyszerűsített futószalagok (Ronda)
             description: Nem mutatja a Futószalagokon található elemeket, csak ha nagyon
-                közel mész, hogy javítsa a teljesítményt. Erősen ellenjavallott,
+                közel mész, hogy javítsa a teljesítményt. Erősen ellenjavallt,
                 hacsak nincs szükséged minden utolsó csepp teljesítményre.
         enableMousePan:
-            title: Kameramozgatás a Képernyő Szélén
+            title: Kameramozgatás a képernyő szélén
             description: Lehetővé teszi a kamera mozgatását, ha a képernyő szélére viszed az
                 egeret. A mozgatás sebessége a fenti Kameramozgás beállítással
                 állítható.
         zoomToCursor:
-            title: Nagyítás a Kurzor Felé
+            title: Nagyítás a kurzor felé
             description: Ha be van kapcsolva, a Nagyítás és Kicsinyítés középpontja a kurzor
                 aktuális helyzete lesz. Kikapcsolt állapotban a képernyő közepe.
         mapResourcesScale:
-            title: Erőforrások Mérete a Térképen
+            title: Erőforrások mérete a Térképen
             description: Kizoomolt állapotban a térképen megjelenő erőforrások (alakzatok és
                 színek) méretét állítja.
     rangeSliderPercentage: <amount> %
@@ -923,11 +923,11 @@ keybindings:
         ingame: Játék
         navigation: Kameramozgás
         placement: Lehelyezés
-        massSelect: Több Kijelölése
-        buildings: Épület Gyorsgombok
-        placementModifiers: Lehelyezés Módosítók
+        massSelect: Több kijelölése
+        buildings: Épületek gyorsgombjai
+        placementModifiers: Lehelyezés-módosítók
     mappings:
-        confirm: Elfogad
+        confirm: Elfogadás
         back: Vissza
         mapMoveUp: Fel
         mapMoveRight: Jobbra
@@ -958,26 +958,26 @@ keybindings:
         storage: Raktár
         wire: Vezeték
         constant_signal: Állandó jel
-        logic_gate: Logic Gate
+        logic_gate: Logikai kapu
         lever: Kapcsoló
         filter: Szűrő
-        wire_tunnel: Vezeték Kereszteződés
+        wire_tunnel: Vezeték-kereszteződés
         display: Kijelző
         reader: Futószalag-olvasó
         virtual_processor: Virtuális Vágó
         transistor: Tranzisztor
         analyzer: Alakzatvizsgáló
         comparator: Összehasonlító
-        item_producer: Item Producer (Sandbox)
+        item_producer: Alakzatgyártó (Homokozó mód)
         pipette: Pipetta
         rotateWhilePlacing: Forgatás
-        rotateInverseModifier: "Módosító: Forgass ellenkező irányba"
+        rotateInverseModifier: "Módosító: Forgatás ellenkező irányba"
         cycleBuildingVariants: Váltás a változatok között
         confirmMassDelete: Terület törlése
         pasteLastBlueprint: Legutóbbi tervrajz beillesztése
         cycleBuildings: Váltás az épületek között
-        lockBeltDirection: Futószalag iránykeresés engedélyezése
-        switchDirectionLockSide: "Iránykereső: Oldal váltása"
+        lockBeltDirection: Futószalag-tervező engedélyezése
+        switchDirectionLockSide: "Futószalag-tervező: Átváltás a másik oldalra"
         copyWireValue: "Vezetékek: Kurzor alatti érték másolása"
         massSelectStart: Nyomd le és húzd a kezdéshez
         massSelectSelectMultiple: Több terület kiválasztása
@@ -1010,7 +1010,7 @@ demo:
         exportingBase: Képernyőkép készítése a teljes bázisról
     settingNotAvailable: Nem elérhető a Demó Verzióban.
 tips:
-    - A Központ mindenféle bemenetet elfogad, nemcsak az éppen aktuálisan kívánt
+    - A Központ mindenféle bemenetet elfogad, nem csak az éppen aktuálisan kívánt
       alakzatot!
     - Igyekezz moduláris gyárakat építeni - megéri!
     - Igyekezz kompakt gyárakat építeni - megéri!
@@ -1019,19 +1019,22 @@ tips:
     - Az arányok mindaddig állandók maradnak, amíg a Fejlesztéseid azonos
       szinten vannak.
     - A soros végrehajtás hatékonyabb, mint a párhuzamos.
-    - A <b>T</b> megnyomásával váltogathatsz a különböző épülettípusok között.
+    - A játék során egy épülethez többféle változatot is feloldhatsz! 
+    - A <b>T</b> megnyomásával váltogathatsz egy épület különböző változatai között.
     - A szimmetria kulcsfontosságú!
     - A hatékonyság kulcsfontosságú!
+    - A különböző alagúttípusokat össze tudod fonni.
     - A Festőnek van egy tükrözött változata is, amit a <b>T</b>-vel hozhatsz elő.
     - Az épületek megfelelő arányban való építésével maximalizálható a hatékonyság.
     - A legmagasabb szinten 5 Bánya teljesen megtölt egy Futószalagot.
     - Ne feledkezz meg az Alagutakról!
-    - A <b>SHIFT</b> lenyomva tartásával bekapcsolod a Futószalagok automatikus
-      iránykeresését, amellyel hosszú Futószalagokat helyezhetsz le könnyedén.
-    - A Vágók mindig függőleges irányban vágnak, mindegy, milyen irányban állnak.
+    - Nem szükséges mindent egyenlően elosztanod a maximális hatékonysághoz.
+    - A <b>SHIFT</b> lenyomva tartásával bekapcsolod a Futószalag-tervezőt,
+      amellyel hosszú Futószalagokat helyezhetsz le könnyedén.
+    - A Vágók mindig függőleges irányban vágnak, függetlenül attól, milyen irányban állnak.
     - A fehér szín előállításához keverd össze mindhárom színt.
     - A <b>SHIFT</b> lenyomva tartásával több épületet is lehelyezhetsz egymás után.
-    - Az <b>ALT</b> lenyomva tartásával megfordíthatod a lehelyezendú Futószalag irányát.
+    - Az <b>ALT</b> lenyomva tartásával megfordíthatod a lehelyezendő Futószalag irányát.
     - A hatékonyság kulcsfontosságú!
     - A Központtól távolabb eső bányászható alakzatok jóval összetettebbek.
     - A gépeknek korlátozott sebességük van, csinálj belőlük többet a maximális
@@ -1041,7 +1044,7 @@ tips:
       Futószalagokat.
     - Tervezz előre, mert óriási káosz lehet a vége!
     - Ne rombold le a régi gyáraidat! Szükséged lesz rájuk a Fejlesztésekhez.
-    - Próbáld megdönteni a 20. Szintet, mielőtt segítséget kérnél!
+    - Próbálj magadtól rájönni a 20. és a 26. szint megoldására, mielőtt segítséget kérnél!
     - Ne bonyolítsd túl a dolgokat; csináld egyszerűen és sokra viheted.
     - Bizonyos gyárakat újra kell használnod a játék során. Tervezd
       újrahasználhatóra a gyáraidat.
@@ -1056,9 +1059,9 @@ tips:
     - Ha közel építesz a Központhoz, útban lesz a következő projektjeidnek.
     - A Fejlesztések lapon a gombostű ikon megnyomásával kitűzheted a képernyőre
       az aktuális alakzatot.
-    - Keverd össze mind a három alapszínt, hogy Fehéret csinálj!
-    - A pálya végtelen méretű; ne nyomorgasd sösze a gyáraidat, terjeszkedj!
-    - Próbáld ki a Factorio-t is! Az a kedvenc játékom.
+    - Nézd meg jól a Színkeverőt, és választ kapsz a kérdéseidre.
+    - A pálya végtelen méretű; ne nyomorgasd össze a gyáraidat, terjeszkedj!
+    - Próbáld ki a Factoriót is! Az a kedvenc játékom.
     - A Negyedelő az alakzat jobb felső negyedétől kezd vágni, az óramutató
       járásával megegyező irányban!
     - A játékmentéseidet a Főmenüben tudod lementeni!
